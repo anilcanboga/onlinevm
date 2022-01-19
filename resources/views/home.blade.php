@@ -18,8 +18,12 @@
                                         {{ session('status') }}
                                     </div>
                                 @endif
-
+                                <center>
                                 {{ __('Giriş Yaptınız!') }}
+                                </center>
+                                    <br>
+                                    <a href="{{route('meeting_room')}}" class="btn btn-dark"> Toplantı Salonuna Git</a>
+                                    <a href="{{route('agenda')}}" class="btn btn-dark"> Takvime Git</a>
                             </div>
                         </div>
                     </div>

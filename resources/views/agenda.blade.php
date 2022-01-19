@@ -13,7 +13,7 @@
                         <div class="row align-items-center h-100">
 
                             <div class="col-12 col-xl-11 mx-auto" style=" background-color: rgba(255,255,255,.5); border-radius: 15px">
-                                <h2 class="text-center">TAKVİMMM <span>20 OCAK,
+                                <h2 class="text-center">TAKVİM <span>20 OCAK,
                         Perşembe | 8:00 - 10:30 PM</span></h2>
                                 <div>
                                     <table class="table table-striped rounded">
@@ -35,7 +35,7 @@
                                         @endforeach
                                     </table>
                                 </div>
-
+                                <a href="{{route('meeting_room')}}" class="btn btn-dark"> Etkinliğe Git</a>
                                 {{--                                <a href="#" class="btn btn-link text-white btn-lg w-50 text-decoration-none mb-2"--}}
                                 {{--                                   id="agenda_button"--}}
                                 {{--                                   style="background-color: #EC942C;"><span--}}
