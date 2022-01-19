@@ -1,0 +1,128 @@
+/* intro */
+.intro a {
+    position: fixed;
+    bottom: 10%;
+    right: 7%;
+    z-index: 1;
+}
+
+.btn-intro {
+    background-color: white;
+    display: block;
+    font-size: 2.2vh;
+    border-radius: 12px;
+    color: black;
+}
+
+.btn-intro:hover {
+    color: black;
+}
+/* intro */
+
+.object-fit-cover {
+    object-fit: cover;
+}
+.object-position-center {
+    object-position: center;
+}
+
+/*LANDSCAPE WARNING*/
+.landscapeWarning {
+    width: 101%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background: url('../images/bg_wallpaper.jpg') no-repeat center;
+    background-size: cover;
+    align-items: center;
+    display: none
+}
+
+.landscapeWarning::before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+
+.innerWarning {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99;
+}
+
+.landscapeWarning span {
+    display: block;
+    width: 100%;
+}
+
+.landscapeWarning h5,
+.landscapeWarning span {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.landscapeWarning h5 small {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 8px;
+
+}
+
+.landscapeWarning span img {
+    display: block;
+    margin: 0 auto 40px;
+    width: 60%;
+    max-width: 180px
+}
+
+.landscapeWarning span img.lwIcon {
+    transition: 2s;
+    animation: rotate 2s infinite;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+}
+
+#lwLogo1 {
+    height: auto;
+    width: 100%;
+    max-height: unset;
+    min-height: unset;
+}
+
+#lwLogo2 {
+    height: auto;
+    width: 70%;
+    max-height: unset;
+    min-height: unset;
+}
+
+/*LANDSCAPE WARNING*/
