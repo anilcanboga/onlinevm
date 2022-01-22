@@ -29,6 +29,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route::resource('agendas', AgendaController::class);
 
 
+
+
 Route::middleware([
     'verified'
 ])->group(function () {
