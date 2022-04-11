@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Agenda;
 use DateTime;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Spatie\CalendarLinks\Link;
 
 class HomeController extends Controller
@@ -69,8 +70,9 @@ class HomeController extends Controller
 
         $link = Link::create('Virtual Meeting', $from, $to)
             ->description("<p>Virtual Meeting</p><a href='#'>Link</a>");
+        return Redirect::to($link->google());
 
-        return response()->json(['url' => $link->google()]);
+//        return response()->json(['url' => $link->google()]);
     }
 
     /**
