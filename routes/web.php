@@ -40,7 +40,7 @@ Route::middleware([
 });
 
 
-Route::middleware(['admin_role_checker_middleware'])->group(function () {
+Route::middleware(['verified','admin_role_checker_middleware'])->group(function () {
     Route::get('/agenda/crud', 'IndexController@view_create_agenda')->name('view_create_agenda');
     Route::post('/agenda/store', 'IndexController@postAgenda')->name('postAgenda');
     Route::get('/agenda/delete/{id}', 'IndexController@deleteAgenda')->name('deleteAgenda');
